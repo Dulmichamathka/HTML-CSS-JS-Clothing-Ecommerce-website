@@ -10,7 +10,8 @@
 }
 
 :root {
-  --background-: #e3e6f3;
+  --background: #e3e6f3;
+  --text-green: #088178;
 }
 
 h1 {
@@ -60,12 +61,12 @@ header {
   align-items: center;
   justify-content: space-between;
   position: sticky;
-  z-index: 10000;
+  z-index: 100000;
   top: 0;
   left: 0;
-  width: 100%;
+
   padding: 20px 80px;
-  background: var(--background-);
+  background: var(--background);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
@@ -91,7 +92,7 @@ header {
 
 #navbar li a:hover,
 #navbar li a.active {
-  color: #088178;
+  color: var(--text-green);
 }
 
 #navbar li a.active::after,
@@ -99,7 +100,7 @@ header {
   content: "";
   width: 30%;
   height: 2px;
-  background: #088178;
+  background: var(--text-green);
   position: absolute;
   bottom: -4px;
   left: 20px;
@@ -123,7 +124,7 @@ header {
 }
 
 #hero h1 {
-  color: #088178;
+  color: var(--text-green);
 }
 
 #hero button {
@@ -140,4 +141,57 @@ header {
   font-size: 15px;
 }
 
-/*  */
+/* fatures  */
+
+#feature {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+#feature .feature-box {
+  width: 180px;
+  text-align: center;
+  padding: 25px 15px;
+  box-shadow: 0px 4px 5px rgba(8, 38, 17, 0.1);
+  border: 1px solid #cce7d0;
+  border-radius: 4px;
+  margin: 15px 0;
+  transition: all 0.6s;
+}
+
+#feature .feature-box img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+#feature .feature-box:hover {
+  box-shadow: 10px 10px 54px rgba(8, 38, 17, 0.01);
+  transform: translateY(-13px);
+}
+
+#feature .feature-box h6 {
+  display: inline-block;
+  padding: 9px 8px 6px 8px;
+  line-height: 1;
+  border-radius: 4px;
+  color: var(--text-green);
+  background-color: #fddde4;
+}
+
+#feature .feature-box:nth-child(2) h6 {
+  background-color: #cdebbc;
+}
+#feature .feature-box:nth-child(3) h6 {
+  background-color: #d1e8f2;
+}
+#feature .feature-box:nth-child(4) h6 {
+  background-color: #cdd4f8;
+}
+#feature .feature-box:nth-child(5) h6 {
+  background-color: #f6dbf6;
+}
+#feature .feature-box:nth-child(6) h6 {
+  background-color: #fff2e5;
+}
