@@ -14,7 +14,7 @@
 }
 
 h1 {
-  font-size: 50px;
+  font-size: 60px;
   line-height: 64px;
   color: #222;
 }
@@ -36,7 +36,7 @@ h6 {
 }
 
 p {
-  font-size: 16px;
+  font-size: 20px;
   color: #465b52;
   margin: 15px 0 20px 0;
 }
@@ -59,8 +59,10 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  position: fixed;
+  position: sticky;
   z-index: 10000;
+  top: 0;
+  left: 0;
   width: 100%;
   padding: 20px 80px;
   background: var(--background-);
@@ -107,7 +109,7 @@ header {
   background-image: url("images/background\ gril.png");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
+  height: 90vh;
   width: 100%;
   padding: 0 80px;
   display: flex;
@@ -137,3 +139,5 @@ header {
   font-weight: 700;
   font-size: 15px;
 }
+
+/*  */
